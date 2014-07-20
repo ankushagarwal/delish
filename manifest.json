@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Delish Auto Tag",
+  "description": "This extension automatically adds all suggested tags from Delicious",
+  "version": "1.0",
+
+  "permissions": [
+    "https://delicious.com/save"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://delicious.com/save*"],
+      "js": ["jquery.js", "main.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
