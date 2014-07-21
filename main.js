@@ -6,6 +6,6 @@ setTimeout(function () {
         $('.text-btn-primary').click();
         setTimeout(function () {
             window.close()
-        }, 600);
+        }, 1200);
     }
-}, 700);
+}, 850);
